@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">BDecrement</string>
+    <string name="decrement">Decrement</string>
+</resources>

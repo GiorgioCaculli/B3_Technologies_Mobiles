@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">CActivitesEtIntentions</string>
+    <string name="call">Call</string>
+    <string name="search_the_web">Search the Web</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="website_url">Website URL</string>
+    <string name="submit">Submit</string>
+</resources>

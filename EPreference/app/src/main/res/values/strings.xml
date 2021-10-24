@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">EPreference</string>
+    <string name="title">Title</string>
+    <string name="create_a_bookmark">Create a bookmark</string>
+    <string name="url">URL</string>
+    <string name="create">Create</string>
+    <string name="create_bookmark">Create Bookmark</string>
+</resources>

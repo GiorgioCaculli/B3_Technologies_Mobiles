@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Playground</string>
+    <string name="btn_mainActivity_clickMe">Click Me!</string>
+    <string name="giorgio_s_playground">Giorgios Playground</string>
+    <string name="text">Text</string>
+    <string name="go_to_second_activity">Go To Second Activity</string>
+    <string name="second_activity">Second Activity</string>
+    <string name="name">Name</string>
+    <string name="submit">Submit</string>
+</resources>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ghostwhite"
+    tools:context=".MainActivity"
+    android:padding="50dp">
+
+    <TextView
+        android:id="@+id/tv_mainActivity_welcome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/welcome"
+        android:textAlignment="center"
+        android:textColor="@color/lightblue"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        android:layout_marginTop="32dp"
+        app:layout_constraintBottom_toTopOf="@id/et_mainActivity_nickname"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/et_mainActivity_nickname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/nickname"
+        android:inputType="text"
+        android:minHeight="48dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintBottom_toTopOf="@id/et_mainActivity_email"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_mainActivity_welcome"
+        android:autofillHints="name" />
+
+    <EditText
+        android:id="@+id/et_mainActivity_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/email_address"
+        android:inputType="textEmailAddress"
+        android:minHeight="48dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintBottom_toTopOf="@id/et_mainActivity_password"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/et_mainActivity_nickname"
+        android:autofillHints="emailAddress" />
+
+    <EditText
+        android:id="@+id/et_mainActivity_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:minHeight="48dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintBottom_toTopOf="@id/btn_mainActivity_submit"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/et_mainActivity_email"
+        android:autofillHints="password" />
+
+    <Button
+        android:id="@+id/btn_mainActivity_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/submit"
+        android:layout_marginTop="32dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/et_mainActivity_password" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
