@@ -41,15 +41,16 @@ public class CreateBookmarkActivity extends AppCompatActivity
             @Override
             public void onClick( View v )
             {
-                String title = etBookmarkTitle.getText().toString();
-                String titleFirstLetter = String.valueOf( title.charAt( 0 ) );
-                String url = etBookmarkURL.getText().toString();
-                Bookmark bookmark = new Bookmark( title, titleFirstLetter, url );
                 Intent goToMainActivityIntent = new Intent();
-                goToMainActivityIntent.putExtra( KEY_BOOKMARK, bookmark );
+                goToMainActivityIntent.putExtra( KEY_BOOKMARK, createFromInput() );
                 setResult( RESULT_OK, goToMainActivityIntent );
                 finish();
             }
         } );
+    }
+
+    private Bookmark createFromInput()
+    {
+        return new Bookmark( etBookmarkTitle.getText().toString(), etBookmarkURL.getText().toString() );
     }
 }

@@ -44,7 +44,7 @@ public class ListBookmarkAdapter extends ArrayAdapter< Bookmark  >
         TextView tvURL = convertView.findViewById( R.id.tv_listItem_url );
         TextView tvSiteName = convertView.findViewById( R.id.tv_listItem_siteName );
 
-        tvFirstLetter.setText( bookmark.getBookmarkFirstLetter() );
+        tvFirstLetter.setText( String.valueOf( bookmark.getBookmarkName().charAt( 0 ) ).toUpperCase() );
         tvURL.setText( bookmark.getBookmarkURL() );
         tvSiteName.setText( bookmark.getBookmarkName() );
     }

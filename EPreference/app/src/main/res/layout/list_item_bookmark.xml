@@ -9,6 +9,7 @@
         android:layout_height="wrap_content"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        android:layout_margin="10dp"
         android:text="A"
         android:textSize="32sp"
         android:id="@+id/tv_listItem_firstLetter"/>
@@ -18,7 +19,8 @@
         android:layout_height="wrap_content"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintLeft_toRightOf="@id/tv_listItem_firstLetter"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_margin="10dp"
         android:text="Placeholder Site"
         android:id="@+id/tv_listItem_siteName"/>
 

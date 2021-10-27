@@ -6,20 +6,17 @@ import android.os.Parcelable;
 public class Bookmark implements Parcelable
 {
     private String bookmarkName;
-    private String bookmarkFirstLetter;
     private String bookmarkURL;
 
-    public Bookmark( String bookmarkName, String bookmarkFirstLetter, String bookmarkURL )
+    public Bookmark( String bookmarkName, String bookmarkURL )
     {
         this.bookmarkName = bookmarkName;
-        this.bookmarkFirstLetter = bookmarkFirstLetter;
         this.bookmarkURL = bookmarkURL;
     }
 
     protected Bookmark( Parcel in )
     {
         bookmarkName = in.readString();
-        bookmarkFirstLetter = in.readString();
         bookmarkURL = in.readString();
     }
 
@@ -48,16 +45,6 @@ public class Bookmark implements Parcelable
         this.bookmarkName = bookmarkName;
     }
 
-    public String getBookmarkFirstLetter()
-    {
-        return bookmarkFirstLetter;
-    }
-
-    public void setBookmarkFirstLetter( String bookmarkFirstLetter )
-    {
-        this.bookmarkFirstLetter = bookmarkFirstLetter;
-    }
-
     public String getBookmarkURL()
     {
         return bookmarkURL;
@@ -73,7 +60,6 @@ public class Bookmark implements Parcelable
     {
         return "Bookmark{" +
                 "bookmarkName='" + bookmarkName + '\'' +
-                ", bookmarkFirstLetter='" + bookmarkFirstLetter + '\'' +
                 ", bookmarkURL='" + bookmarkURL + '\'' +
                 '}';
     }
@@ -88,7 +74,6 @@ public class Bookmark implements Parcelable
     public void writeToParcel( Parcel dest, int flags )
     {
         dest.writeString( bookmarkName );
-        dest.writeString( bookmarkFirstLetter );
         dest.writeString( bookmarkURL );
     }
 }

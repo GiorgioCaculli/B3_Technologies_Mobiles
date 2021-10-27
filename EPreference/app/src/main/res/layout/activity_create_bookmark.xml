@@ -21,25 +21,27 @@
         android:id="@+id/et_createBookmarkActivity_title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:inputType="text"
+        android:autofillHints="Bookmark's Title"
         android:hint="@string/title"
-        app:layout_constraintTop_toBottomOf="@id/tv_createBookmarkActivity_textView"
+        android:inputType="text"
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toTopOf="@id/et_createBookmarkActivity_url"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/et_createBookmarkActivity_url"
-        android:autofillHints="Bookmark's Title" />
+        app:layout_constraintTop_toBottomOf="@id/tv_createBookmarkActivity_textView" />
 
     <EditText
+        android:id="@+id/et_createBookmarkActivity_url"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:inputType="textUri"
+        android:autofillHints="Bookmark's URL"
         android:hint="@string/url"
-        android:id="@+id/et_createBookmarkActivity_url"
-        app:layout_constraintTop_toBottomOf="@id/et_createBookmarkActivity_title"
+        android:inputType="textUri"
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toTopOf="@id/btn_createBookmarkActivity_create"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/btn_createBookmarkActivity_create"
-        android:autofillHints="Bookmark's URL" />
+        app:layout_constraintTop_toBottomOf="@id/et_createBookmarkActivity_title" />
 
     <Button
         android:layout_width="wrap_content"
