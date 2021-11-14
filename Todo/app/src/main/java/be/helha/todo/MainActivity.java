@@ -56,7 +56,7 @@ public class MainActivity extends AppCompatActivity
             }
         } );*/
 
-        todoRepository.delete( 6 ).enqueue( new Callback< Void >()
+        /*todoRepository.delete( 6 ).enqueue( new Callback< Void >()
         {
             @Override
             public void onResponse( Call< Void > call, Response< Void > response )
@@ -69,9 +69,9 @@ public class MainActivity extends AppCompatActivity
             {
                 Log.e( "Error: ", t.toString() );
             }
-        } );
+        } );*/
 
-        todoRepository.update( new DtoTodo( 9, "Reussir les projets", true ), 9 ).enqueue( new Callback< Void >()
+        /*todoRepository.update( new DtoTodo( 9, "Reussir les projets", true ), 9 ).enqueue( new Callback< Void >()
         {
             @Override
             public void onResponse( Call< Void > call, Response< Void > response )
@@ -84,9 +84,9 @@ public class MainActivity extends AppCompatActivity
             {
                 Log.e( "Error: ", t.toString() );
             }
-        } );
+        } );*/
 
-        todoRepository.getById( 13 ).enqueue( new Callback< DtoTodo >()
+        /*todoRepository.getById( 13 ).enqueue( new Callback< DtoTodo >()
         {
             @Override
             public void onResponse( Call< DtoTodo > call, Response< DtoTodo > response )
@@ -99,6 +99,6 @@ public class MainActivity extends AppCompatActivity
             {
                 Log.e( "Error: ", t.toString() );
             }
-        } );
+        } );*/
     }
 }
