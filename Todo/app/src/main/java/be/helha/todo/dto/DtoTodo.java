@@ -5,6 +5,20 @@ import android.os.Parcelable;
 
 public class DtoTodo implements Parcelable
 {
+    public static final Creator< DtoTodo > CREATOR = new Creator< DtoTodo >()
+    {
+        @Override
+        public DtoTodo createFromParcel( Parcel in )
+        {
+            return new DtoTodo( in );
+        }
+
+        @Override
+        public DtoTodo[] newArray( int size )
+        {
+            return new DtoTodo[ size ];
+        }
+    };
     private int id;
     private String title;
     private boolean isDone;
@@ -22,21 +36,6 @@ public class DtoTodo implements Parcelable
         title = in.readString();
         isDone = in.readByte() != 0;
     }
-
-    public static final Creator< DtoTodo > CREATOR = new Creator< DtoTodo >()
-    {
-        @Override
-        public DtoTodo createFromParcel( Parcel in )
-        {
-            return new DtoTodo( in );
-        }
-
-        @Override
-        public DtoTodo[] newArray( int size )
-        {
-            return new DtoTodo[ size ];
-        }
-    };
 
     public int getId()
     {
